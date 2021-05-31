@@ -3,15 +3,13 @@
 </template>
 
 <script>
-import Base from './components/layout/Base';
- 
+import Base from "./components/layout/Base";
+
 export default {
-    name: 'App',
+    name: "App",
     components: {
         Base,
     },
-    data: () => ({
-
-    }),
+    data: () => ({}),
 };
 </script>
