@@ -4,7 +4,7 @@ import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import About from '../views/About';
 import Formulario from '../views/Formulario';
-import InfoAPI from '../views/InfoAPI';
+import CovidInfo from '../views/CovidInfo';
 
 Vue.use(VueRouter)
 
@@ -25,9 +25,9 @@ const routes = [
     component: Formulario
   },
   {
-    path: '/infoAPI',
-    name: 'InfoAPI',
-    component: InfoAPI
+    path: '/covidInfo',
+    name: 'CovidInfo',
+    component: CovidInfo
   }
 ]
 

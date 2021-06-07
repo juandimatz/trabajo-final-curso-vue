@@ -10,6 +10,9 @@
         <router-link to="/about" tag="v-btn">
             <v-btn large text>About</v-btn>
         </router-link>
+        <router-link to="/covidInfo" tag="v-btn">
+            <v-btn large text>Covid Info</v-btn>
+        </router-link>
         
         <v-spacer></v-spacer>
 
