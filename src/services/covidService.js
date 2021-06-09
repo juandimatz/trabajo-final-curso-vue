@@ -1,8 +1,12 @@
+import moment from 'moment';
 import http from './api/covidInfoClient';
 
 const getCovidInfo = async() => {
     
-    http.defaults.params = {'country': 'argentina', 'day': '2021-06-07'};
+    http.defaults.params = {
+        'country': 'argentina', 
+        'day': moment().format('YYYY-MM-DD')
+    };
 
     return await http.get().then((response) => {
         return response.data.response[0];

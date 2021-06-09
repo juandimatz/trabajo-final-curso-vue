@@ -1,6 +1,5 @@
 <template>
     <v-app>
-        <NavigationDrawer />
 
         <Navbar />
 
@@ -25,13 +24,11 @@
 <script>
 
     import Navbar from './Navbar/Navbar';
-    import NavigationDrawer from './NavigationDrawer/NavigationDrawer';
 
     export default {
         name: 'Base',
         components: {
             Navbar,
-            NavigationDrawer,
         }
     }
 
