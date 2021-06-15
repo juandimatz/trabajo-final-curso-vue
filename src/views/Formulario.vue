@@ -64,7 +64,6 @@
                     </v-menu>
                 </v-col>  
                 <v-btn
-                    color="success"
                     class="mr-4"
                     @click="register"
                     id="register-btn"
@@ -75,6 +74,7 @@
         </v-container>
     </v-form>
 </template>
+
 <script>
     export default {
         data: (vm) => ({
@@ -119,10 +119,10 @@
                 return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`
             },
             register () {
-                localStorage.setItem("Nombre", this.firstname);
-                localStorage.setItem("Apellido", this.lastname);
+                localStorage.setItem("nombre", this.firstname);
+                localStorage.setItem("apellido", this.lastname);
                 localStorage.setItem("email", this.email);
-                localStorage.setItem("fecha de nacimiento", this.date);
+                localStorage.setItem("fecha_nac", this.date);
             },
         },
     };
@@ -145,5 +145,7 @@
     #register-btn {
         margin-left: 12px;
         margin-top: 20px;
+        background-color: #329972;
+        color: white;
     }
 </style>
