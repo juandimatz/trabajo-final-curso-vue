@@ -123,6 +123,10 @@
                 localStorage.setItem("apellido", this.lastname);
                 localStorage.setItem("email", this.email);
                 localStorage.setItem("fecha_nac", this.date);
+                console.log("Nombre: " + localStorage.getItem("nombre"));
+                console.log("Apellido: " + localStorage.getItem("apellido"));
+                console.log("Email: " + localStorage.getItem("email"));
+                console.log("Fecha de nacimiento: " + localStorage.getItem("fecha_nac"));
             },
         },
     };
